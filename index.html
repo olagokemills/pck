@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             </div>
 
             <div class="">
-                <a class="btn special-btn">Connect</a>
+                <a class="btn special-btn" data-toggle="modal" data-target="#exampleModal">Connect</a>
             </div>
         </header>
         <aside>
@@ -59,7 +60,7 @@
                 </li>
             </ul>
 
-            <div class="border-top pb-3" style="position: relative; bottom: 0;">
+            <div class="border-top pb-3 bottom-menu" style="position: relative; bottom: 0;">
                 <div class="d-flex justify-content-between w-100">
                     <div class="p-2">
                         <span class="special-text">$38usd</span> 
@@ -82,23 +83,26 @@
             </div>
         </aside>
         <section class="wrapper">
-            <div class="p-5">
+            <div class="p-4">
                     <div class="d-flex justify-content-between">
-                        <div class="p-2">
-                            img 1
+                        <div class="p-2 img-left">
+                            <img src="" alt="img 1">
                         </div>
                         <div class="p-2 text-center head-text">
+                            <div class="top-img">
+                                <img src=""  />
+                            </div>
                             <h3>PancakeSwap</h3>
                             <p>The #1 AMM and yield farm on Binance Smart Chain.</p> 
                         </div>
-                        <div class="p-2">
-                            img 1
+                        <div class="p-2 img-right">
+                            <img src="" alt="img 2" />
                         </div>
                     </div>
                
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <div class="card card-effects p-4">
                             <h2>Farms & Staking</h2>
                             <img src="" alt="cake" />
@@ -107,22 +111,92 @@
                             <p>Cake in wallet</p>   
                             <p class="text-muted">Locked</p>
                             <div class="w-100">
-                                <a class="btn special-btn">Unlock Wallet</a>
+                                <a class="btn special-btn w-100 unlock__btn">Unlock Wallet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card card-effects p-4">
+                            <h2>Your Lottery Winnings</h2>
+                            <img src="" alt="cake" />
+                            <p>CAKE to Collect:</p>
+                            <p class="text-muted">Locked</p>
+                            <span>Total jackpot this round:</span>   
+                            <h3>35,413.25 CAKE</h3>
+                            <small>~$1,396,428.42</small>
+                            <div class="w-100">
+                                <a class="btn special-btn w-100 unlock__btn">Unlock Wallet</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-4">
+                            <h3 class="text-dark">Earn up to</h3>
+                            <h2 class="special__color">333.87% APR</h2>
+                            <h3 class="text-dark">in Farms</h3>
+                            <div class="d-flex justify-content-end">
+                                <span>arrow-right</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card card-special p-4">
+                            <h3 class="text-dark">Earn</h3>
+                            <h2 class="text-white">CAKE, RAMP, <br /> HAKKA, pBTC</h2>
+                            <h3 class="text-dark">in Pools</h3>
+                            <div class="d-flex justify-content-end">
+                                <span>arrow-right</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-4">
+                            <h3 class="text-dark">Lottery with</h3>
+                            <h2 class="special__color">$1,412,718</h2>
+                            <h3 class="text-dark">up for grabs</h3>
+                            <div class="d-flex justify-content-end">
+                                <span>arrow-right</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card p-4">
+                            <h3>Cake Stats</h3>
+                            <div class="d-flex justify-content-between p-2">
+                                <small>
+                                    Total CAKE Supply
+                                </small>
+                                <small>
+                                    162,502,207
+                                </small>
+                            </div>
+                            <div class="d-flex justify-content-between p-2">
+                                <small>
+                                    Total CAKE Burned
+                                </small>
+                                <small>
+                                    120,243,030
+                                </small>
+                            </div>
+                            <div class="d-flex justify-content-between p-2">
+                                <small>
+                                    New CAKE/block
+                                </small>
+                                <small>
+                                    22
+                                </small>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-6">
-                        <div class="card card-effects p-4">
-                            <h2>Farms & Staking</h2>
-                            <img src="" alt="cake" />
-                            <p>Cake to harvest</p>
-                            <p class="text-muted">Locked</p>
-                            <p>Cake in wallet</p>   
-                            <p class="text-muted">Locked</p>
-                            <div class="w-100">
-                                <a class="btn special-btn">Unlock Wallet</a>
-                            </div>
+                        <div class="card p-4">
+                            <h3>Total Value Locked (TVL)</h3>
+                            <h2>$10,218,249,047</h2>
+                            <p>Across all LPs and Syrup Pools</p>
                         </div>
                     </div>
                 </div>
@@ -130,5 +204,56 @@
             </div>
         </section>
     </main>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content resp-modal">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Connect to wallet</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="wallet__list d-flex justify-content-around mb-2">
+                    <span>Metamask</span>
+                    <span> <img src="" alt="wallet img"/> </span>
+            </div>
+            <div class="wallet__list d-flex justify-content-around mb-2">
+                <span>TrustWallet</span>
+                <span> <img src="" alt="wallet img"/> </span>
+            </div>
+            <div class="wallet__list d-flex justify-content-around mb-2">
+                <span>MathWallet</span>
+                <span> <img src="" alt="wallet img"/> </span>
+            </div>
+            <div class="wallet__list d-flex justify-content-around mb-2">
+                <span>TokenPocket</span>
+                <span> <img src="" alt="wallet img"/> </span>
+            </div>
+            <div class="wallet__list d-flex justify-content-around mb-2">
+                <span>WalletConnect</span>
+                <span> <img src="" alt="wallet img"/> </span>
+            </div>
+            <div class="wallet__list d-flex justify-content-around mb-2">
+                <span>Binance Chain wallet</span>
+                <span> <img src="" alt="wallet img"/> </span>
+            </div>
+            <div class="wallet__list d-flex justify-content-around mb-2">
+                <span>SafePal wallet</span>
+                <span> <img src="" alt="wallet img"/> </span>
+            </div>
+
+            <div class="pt-3 pb-3 text-center">
+                <h6 style="color: rgb(31, 199, 212);">Learn how to connect</h6> 
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>

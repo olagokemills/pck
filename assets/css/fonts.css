@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Kanit Bold";
+    src: url("../fonts/Kanit-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Kanit Light";
+    src: url("../fonts/Kanit-Light.ttf");
+}
+
+@font-face {
+    font-family: "Kanit SemiBold";
+    src: url("../fonts/Kanit-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Kanit Medium";
+    src: url("../fonts/Kanit-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Kanit Regular";
+    src: url("../fonts/Kanit-Regular.ttf");
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Kanit Bold";
+}
+body{
+    font-family: "Kanit Regular";
+}
+
+button, a{
+    font-family: "Kanit Medium";
+}
+small{
+    font-family: "Kanit Light";
+}
